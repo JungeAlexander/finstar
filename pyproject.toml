@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "finstar"
 version = "0.1.0"
-description = ""
+description = "Modeling financial time series. WIP!"
 authors = ["Alexander Junge <alexander.junge@gmail.com>"]
 license = "Apache-2.0"
+homepage = "https://github.com/JungeAlexander/finstar"
+repository = "https://github.com/JungeAlexander/finstar/tree/main/src"
+readme = "src/README.md"
 packages = [
     { include = "finstar", from = "src" },
 ]
