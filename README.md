@@ -14,3 +14,12 @@ poetry run pre-commit install
 ```
 poetry run mkdocs serve
 ```
+
+## Development
+
+### Publication to PyPI
+
+```
+poetry build
+poetry publish
+```
