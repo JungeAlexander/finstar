@@ -17,6 +17,7 @@ yfinance = "^0.1.59"
 altair = "^4.1.0"
 pandas = "^1.2.4"
 numpy = "^1.20.3"
+pyarrow = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 jupyterlab = "^3.0.16"
