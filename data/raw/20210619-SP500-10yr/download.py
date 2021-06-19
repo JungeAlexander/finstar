@@ -8,7 +8,7 @@ assert len(symbols) == len(set(symbols))
 
 # download ticker data for last 10 years from YFinance
 tickers = yf.Tickers(symbols)
-ticker_df = tickers.history(period="10yr")
+ticker_df = tickers.history(period="10y")
 
 # save both Wikipedia and YFinance data
 wiki_df.to_parquet(
