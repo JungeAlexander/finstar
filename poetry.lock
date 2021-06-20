@@ -238,6 +238,25 @@ optional = false
 python-versions = ">=2.7"
 
 [[package]]
+name = "exchange-calendars"
+version = "3.1.0"
+description = "exchange_calendars is a Python library with securities exchange calendars"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+pandas = ">=1.0"
+pyluach = "*"
+python-dateutil = "*"
+pytz = "*"
+toolz = "*"
+
+[package.extras]
+dev = ["flake8", "pytest", "pytest-benchmark", "parameterized", "pytest-xdist", "pip-tools"]
+
+[[package]]
 name = "filelock"
 version = "3.0.12"
 description = "A platform independent file lock."
@@ -817,6 +836,20 @@ pytz = ">=2017.3"
 test = ["pytest (>=5.0.1)", "pytest-xdist", "hypothesis (>=3.58)"]
 
 [[package]]
+name = "pandas-market-calendars"
+version = "2.0"
+description = "Market and exchange trading calendars for pandas"
+category = "main"
+optional = false
+python-versions = ">=3.5.0"
+
+[package.dependencies]
+exchange-calendars = "*"
+pandas = ">=0.18"
+python-dateutil = "*"
+pytz = "*"
+
+[[package]]
 name = "pandocfilters"
 version = "1.4.3"
 description = "Utilities for writing pandoc filters in python"
@@ -954,6 +987,14 @@ description = "Pygments is a syntax highlighting package written in Python."
 category = "dev"
 optional = false
 python-versions = ">=3.5"
+
+[[package]]
+name = "pyluach"
+version = "1.3.0"
+description = "Pyluach is a Python package for manipulating Hebrew dates,                     Gregorian-Hebrew calendar conversions, getting the weekly                     parsha, and other Jewish calendar related calculations."
+category = "main"
+optional = false
+python-versions = ">=3.4"
 
 [[package]]
 name = "pymdown-extensions"
@@ -1280,7 +1321,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "599d9ed823dee3db2202f829325b23a0ae1ec0f142d015453674a893ad0db602"
+content-hash = "d3ad03974cffbb6e4bd76426979b48ea3ee3ed3d8c1c6ee68623efa8d96f6166"
 
 [metadata.files]
 altair = [
@@ -1419,6 +1460,9 @@ distlib = [
 entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
     {file = "entrypoints-0.3.tar.gz", hash = "sha256:c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"},
+]
+exchange-calendars = [
+    {file = "exchange_calendars-3.1.0.tar.gz", hash = "sha256:92d9ddbbe6750d0603460faa151e9e506adc0e50db34a3446710aa032d3621c7"},
 ]
 filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
@@ -1690,6 +1734,10 @@ pandas = [
     {file = "pandas-1.2.4-cp39-cp39-win_amd64.whl", hash = "sha256:2b063d41803b6a19703b845609c0b700913593de067b552a8b24dd8eeb8c9895"},
     {file = "pandas-1.2.4.tar.gz", hash = "sha256:649ecab692fade3cbfcf967ff936496b0cfba0af00a55dfaacd82bdda5cb2279"},
 ]
+pandas-market-calendars = [
+    {file = "pandas_market_calendars-2.0-py3-none-any.whl", hash = "sha256:f6f687df429c11e07edde4a7e3b0ee3dd63d78c639800e4dca398373b41ad94d"},
+    {file = "pandas_market_calendars-2.0.tar.gz", hash = "sha256:656b371a001234a3db368d418bddeb57805e5c95b59d94041e87bc976d4fc463"},
+]
 pandocfilters = [
     {file = "pandocfilters-1.4.3.tar.gz", hash = "sha256:bc63fbb50534b4b1f8ebe1860889289e8af94a23bff7445259592df25a3906eb"},
 ]
@@ -1767,6 +1815,10 @@ pycparser = [
 pygments = [
     {file = "Pygments-2.9.0-py3-none-any.whl", hash = "sha256:d66e804411278594d764fc69ec36ec13d9ae9147193a1740cd34d272ca383b8e"},
     {file = "Pygments-2.9.0.tar.gz", hash = "sha256:a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"},
+]
+pyluach = [
+    {file = "pyluach-1.3.0-py3-none-any.whl", hash = "sha256:43977d47c86695d66789f3d24c411c4d110363f760331136009e43ac9af61b1e"},
+    {file = "pyluach-1.3.0.tar.gz", hash = "sha256:9cf95eaa600cc904d1adb015036ab135e0d732ca2a30253db92b676ee3415dea"},
 ]
 pymdown-extensions = [
     {file = "pymdown-extensions-8.2.tar.gz", hash = "sha256:b6daa94aad9e1310f9c64c8b1f01e4ce82937ab7eb53bfc92876a97aca02a6f4"},

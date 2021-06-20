@@ -18,6 +18,7 @@ altair = "^4.1.0"
 pandas = "^1.2.4"
 numpy = "^1.20.3"
 pyarrow = "^4.0.1"
+pandas-market-calendars = "^2.0"
 
 [tool.poetry.dev-dependencies]
 jupyterlab = "^3.0.16"
