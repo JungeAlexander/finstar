@@ -12,7 +12,8 @@ output_dir = Path("./20210620")
 # get S&P500 ticker symbols from Wikipedia
 wiki_df = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
 symbols = sorted(wiki_df.loc[:, "Symbol"])
-assert len(symbols) == len(set(symbols)), "S&P500 contains duplicated symbols"
+if len(symbols) != len(set(symbols)):
+    raise ValueError("S&P500 contains duplicated symbols")
 wiki_df.to_parquet(
     output_dir / "SP500-companies.snappy.parquet",
     engine="pyarrow",
