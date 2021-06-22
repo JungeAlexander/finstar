@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import pandas_market_calendars as mcal
 
-input_dir = Path("../../raw/20210620-SP500-max/20210620/")
+input_dir = Path("data/raw/20210620-SP500-max/20210620/")
 
 # determine NYSE market days for the last 10 years, starting 20210620
 end = date(year=2021, month=6, day=20)
@@ -25,7 +25,7 @@ for f in sorted(input_dir.glob("*.parquet")):
     days_df = days_df.join(c, on="Date", how="left")
 
 days_df.to_parquet(
-    "20210622-SP500-10yrs.snappy.parquet",
+    "data/interim/20210622-SP500-10yrs/20210622-SP500-10yrs.snappy.parquet",
     engine="pyarrow",
     compression="snappy",
 )
