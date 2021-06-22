@@ -1,0 +1,8 @@
+stages:
+  prepare-SP500-10yrs:
+    cmd: python data/interim/20210622-SP500-10yrs/prepare-SP500-10yrs.py
+    deps:
+    - data/interim/20210622-SP500-10yrs/prepare-SP500-10yrs.py
+    - data/raw/20210620-SP500-max/20210620
+    outs:
+    - data/interim/20210622-SP500-10yrs/20210622-SP500-10yrs.snappy.parquet

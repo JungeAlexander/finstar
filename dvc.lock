@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  prepare-SP500-10yrs:
+    cmd: python data/interim/20210622-SP500-10yrs/prepare-SP500-10yrs.py
+    deps:
+    - path: data/interim/20210622-SP500-10yrs/prepare-SP500-10yrs.py
+      md5: ad7f1a23287820bc8bca92b76b99b2c7
+      size: 999
+    - path: data/raw/20210620-SP500-max/20210620
+      md5: 4d9e0415b2dbe330daebd319322ca655.dir
+      size: 180918917
+      nfiles: 508
+    outs:
+    - path: data/interim/20210622-SP500-10yrs/20210622-SP500-10yrs.snappy.parquet
+      md5: c3b47ee6f258ff39fbf94f7cc843eb40
+      size: 8781267
