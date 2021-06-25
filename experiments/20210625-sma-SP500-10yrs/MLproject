@@ -1,0 +1,4 @@
+name: 20210625-sma-SP500-10yrs
+
+docker_env:
+  image: finstar-mlflow:v0.1.1
