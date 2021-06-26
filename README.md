@@ -17,6 +17,12 @@ poetry run mkdocs serve
 
 ## Development
 
+### Testing
+
+```
+poetry run pytest
+```
+
 ### Publication to PyPI
 
 ```
