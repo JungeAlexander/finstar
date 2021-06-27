@@ -45,3 +45,28 @@ def test_returns(log_returns_list: list, returns_list: list):
     expected_returns = pd.Series(returns_list)
     computed_returns = returns.returns(log_returns)
     pd.testing.assert_series_equal(computed_returns, expected_returns)
+
+
+@pytest.mark.parametrize(
+    "strategy_list,returns_list,expected_strat_returns_list",
+    [
+        ([1, 1, 1], [np.nan, 1, 2], [np.nan, 1, 2]),
+        ([-1, -1, -1], [np.nan, -1, -2], [np.nan, 1, 2]),
+        ([1, np.nan, -1], [np.nan, 0.5, 0], [np.nan, 0.5, np.nan]),
+    ],
+)
+def test_strategy_returns(
+    strategy_list: list, returns_list: list, expected_strat_returns_list: list
+):
+    """Compute returns for a strategy.
+
+    Args:
+        strategy_list (list): long/short positions taken by strategy
+        returns_list (list): returns on a given day
+        expected_strat_returns_list (list): expected returns achieved by strategy
+    """
+    strategy = pd.Series(strategy_list)
+    given_returns = pd.Series(returns_list)
+    expected_returns = pd.Series(expected_strat_returns_list)
+    computed_returns = returns.strategy_returns(strategy, given_returns)
+    pd.testing.assert_series_equal(computed_returns, expected_returns)
