@@ -23,6 +23,13 @@ poetry run mkdocs serve
 poetry run pytest
 ```
 
+### Bumping version
+
+```
+poetry run bump2version minor # major or minor or patch
+git-push --tags
+```
+
 ### Publication to PyPI
 
 ```
