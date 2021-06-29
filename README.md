@@ -36,3 +36,9 @@ git-push --tags
 poetry build
 poetry publish
 ```
+
+### tox
+
+```
+ poetry run tox
+ ```
