@@ -465,7 +465,7 @@ watch = ["pyinotify"]
 
 [[package]]
 name = "dvc"
-version = "2.4.1"
+version = "2.4.3"
 description = "Git for data scientists - manage your code and data together"
 category = "dev"
 optional = false
@@ -483,7 +483,7 @@ dpath = ">=2.0.1,<3"
 dulwich = ">=0.20.23"
 flatten-dict = ">=0.3.0,<1"
 "flufl.lock" = ">=3.2,<4"
-fsspec = "2021.6.0"
+fsspec = ">=2021.6.1"
 funcy = ">=1.14"
 gitpython = ">3"
 grandalf = "0.6"
@@ -497,14 +497,14 @@ psutil = ">=5.8.0"
 pyasn1 = ">=0.4.1"
 pydot = ">=1.2.4"
 pygit2 = ">=1.5.0"
-pygtrie = "2.3.2"
+pygtrie = ">=2.3.2"
 pyparsing = "2.4.7"
 python-benedict = ">=0.21.1"
 pywin32 = {version = ">=225", markers = "sys_platform == \"win32\""}
 requests = ">=2.22.0"
 rich = ">=10.0.0"
 "ruamel.yaml" = ">=0.16.1"
-s3fs = {version = "2021.6.0", optional = true, markers = "extra == \"s3\""}
+s3fs = {version = "2021.6.1", optional = true, markers = "extra == \"s3\""}
 shortuuid = ">=0.5.0"
 shtab = ">=1.3.4,<2"
 tabulate = ">=0.8.7"
@@ -516,16 +516,16 @@ win-unicode-console = {version = ">=0.5", markers = "sys_platform == \"win32\""}
 "zc.lockfile" = ">=1.2.1"
 
 [package.extras]
-all = ["gcsfs (==2021.6.0)", "s3fs (==2021.6.0)", "aiobotocore[boto3] (==1.3.0)", "adlfs (==0.7.1)", "azure-identity (>=1.4.0)", "knack", "paramiko[invoke] (>=2.7.0)", "oss2 (==2.6.1)", "pycryptodome (>=3.10)", "pydrive2 (>=1.8.1)", "six (>=1.13.0)", "pyarrow (>=2.0.0)", "hdfs (==2.5.8)", "webdav4 (>=0.8.1)"]
+all = ["gcsfs (==2021.6.1)", "s3fs (==2021.6.1)", "aiobotocore[boto3] (==1.3.0)", "adlfs (==0.7.1)", "azure-identity (>=1.4.0)", "knack", "paramiko[invoke] (>=2.7.0)", "oss2 (==2.6.1)", "pycryptodome (>=3.10)", "pydrive2 (>=1.8.1)", "six (>=1.13.0)", "pyarrow (>=2.0.0)", "hdfs (==2.5.8)", "webdav4 (>=0.8.1)"]
 azure = ["adlfs (==0.7.1)", "azure-identity (>=1.4.0)", "knack"]
 gdrive = ["pydrive2 (>=1.8.1)", "six (>=1.13.0)"]
-gs = ["gcsfs (==2021.6.0)"]
+gs = ["gcsfs (==2021.6.1)"]
 hdfs = ["pyarrow (>=2.0.0)"]
 oss = ["oss2 (==2.6.1)", "pycryptodome (>=3.10)"]
-s3 = ["s3fs (==2021.6.0)", "aiobotocore[boto3] (==1.3.0)"]
+s3 = ["s3fs (==2021.6.1)", "aiobotocore[boto3] (==1.3.0)"]
 ssh = ["paramiko[invoke] (>=2.7.0)"]
 ssh_gssapi = ["paramiko[invoke,gssapi] (>=2.7.0)"]
-tests = ["wheel (==0.36.2)", "pytest (==6.2.4)", "pytest-cov (==2.12.1)", "pytest-xdist (==2.3.0)", "pytest-mock (==3.6.1)", "pytest-lazy-fixture (==0.6.3)", "pytest-timeout (==1.4.2)", "pytest-docker (==0.10.3)", "flaky (==3.7.0)", "mock (==4.0.3)", "rangehttpserver (==1.2.0)", "mock-ssh-server (==0.9.0)", "beautifulsoup4 (==4.9.3)", "wget (==3.2)", "filelock (==3.0.12)", "wsgidav (==3.1.0)", "crc32c (==2.2)", "xmltodict (==0.12.0)", "google-compute-engine (==2.8.13)", "google-cloud-storage (==1.38.0)", "urllib3 (==1.26.5)", "Pygments (==2.9.0)", "collective.checkdocs (==0.2)", "pydocstyle (==6.1.1)", "jaraco.windows (==5.5.0)", "pylint (==2.8.3)", "pylint-pytest (==1.0.3)", "pylint-plugin-utils (==0.6)", "mypy (==0.902)", "types-requests", "types-paramiko", "types-tabulate", "types-toml"]
+tests = ["wheel (==0.36.2)", "pytest (==6.2.4)", "pytest-cov (==2.12.1)", "pytest-xdist (==2.3.0)", "pytest-mock (==3.6.1)", "pytest-lazy-fixture (==0.6.3)", "pytest-timeout (==1.4.2)", "pytest-docker (==0.10.3)", "flaky (==3.7.0)", "mock (==4.0.3)", "rangehttpserver (==1.2.0)", "mock-ssh-server (==0.9.0)", "beautifulsoup4 (==4.9.3)", "wget (==3.2)", "filelock (==3.0.12)", "wsgidav (==3.1.0)", "crc32c (==2.2.post0)", "xmltodict (==0.12.0)", "google-compute-engine (==2.8.13)", "google-cloud-storage (==1.39.0)", "urllib3 (==1.26.6)", "Pygments (==2.9.0)", "collective.checkdocs (==0.2)", "pydocstyle (==6.1.1)", "jaraco.windows (==5.5.0)", "pylint (==2.8.3)", "pylint-pytest (==1.0.3)", "pylint-plugin-utils (==0.6)", "mypy (==0.910)", "types-requests", "types-paramiko", "types-tabulate", "types-toml"]
 webdav = ["webdav4 (>=0.8.1)"]
 webhdfs = ["hdfs (==2.5.8)"]
 
@@ -606,7 +606,7 @@ atpublic = "*"
 
 [[package]]
 name = "fsspec"
-version = "2021.6.0"
+version = "2021.6.1"
 description = "File-system specification"
 category = "dev"
 optional = false
@@ -1926,7 +1926,7 @@ python-versions = "*"
 
 [[package]]
 name = "s3fs"
-version = "2021.6.0"
+version = "2021.6.1"
 description = "Convenient Filesystem interface over S3"
 category = "dev"
 optional = false
@@ -1934,7 +1934,7 @@ python-versions = ">= 3.6"
 
 [package.dependencies]
 aiobotocore = ">=1.0.1"
-fsspec = "2021.06.0"
+fsspec = "2021.06.1"
 
 [package.extras]
 awscli = ["aiobotocore"]
@@ -2107,6 +2107,28 @@ description = "Tornado is a Python web framework and asynchronous networking lib
 category = "dev"
 optional = false
 python-versions = ">= 3.5"
+
+[[package]]
+name = "tox"
+version = "3.23.1"
+description = "tox is a generic virtualenv management and test command line tool"
+category = "dev"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+
+[package.dependencies]
+colorama = {version = ">=0.4.1", markers = "platform_system == \"Windows\""}
+filelock = ">=3.0.0"
+packaging = ">=14"
+pluggy = ">=0.12.0"
+py = ">=1.4.17"
+six = ">=1.14.0"
+toml = ">=0.9.4"
+virtualenv = ">=16.0.0,<20.0.0 || >20.0.0,<20.0.1 || >20.0.1,<20.0.2 || >20.0.2,<20.0.3 || >20.0.3,<20.0.4 || >20.0.4,<20.0.5 || >20.0.5,<20.0.6 || >20.0.6,<20.0.7 || >20.0.7"
+
+[package.extras]
+docs = ["pygments-github-lexers (>=0.0.5)", "sphinx (>=2.0.0)", "sphinxcontrib-autoprogram (>=0.1.5)", "towncrier (>=18.5.0)"]
+testing = ["flaky (>=3.4.0)", "freezegun (>=0.3.11)", "psutil (>=5.6.1)", "pytest (>=4.0.0)", "pytest-cov (>=2.5.1)", "pytest-mock (>=1.10.0)", "pytest-randomly (>=1.0.0)", "pytest-xdist (>=1.22.2)", "pathlib2 (>=2.3.3)"]
 
 [[package]]
 name = "tqdm"
@@ -2317,7 +2339,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d754b68a8f41791be5b3bca70b4c241ba901ef271679e49d544a50da15b4a9bc"
+content-hash = "62ae317443682d1d66182dc781f19b7a86a9e445819e36aa08317df1af08b049"
 
 [metadata.files]
 aiobotocore = [
@@ -2575,8 +2597,8 @@ dulwich = [
     {file = "dulwich-0.20.23.tar.gz", hash = "sha256:402e56b5c07f040479d1188e5c2f406e2c006aa3943080155d4c6d05e5fca865"},
 ]
 dvc = [
-    {file = "dvc-2.4.1-py2.py3-none-any.whl", hash = "sha256:d1982f1b1628a6b5a0bbc562b560c5efd97da149655a0fda99183595c2b900c8"},
-    {file = "dvc-2.4.1.tar.gz", hash = "sha256:6fd5cd2b347ff16d91931de2db4b0ed70f5e352235732dbcb55acd75650c9c67"},
+    {file = "dvc-2.4.3-py2.py3-none-any.whl", hash = "sha256:f02cf67cf3a5fee7428d65a2cab3abd7b4c5f705b27c4796710cce74a48f4702"},
+    {file = "dvc-2.4.3.tar.gz", hash = "sha256:52e1f9c3fca16aae22b397a3f1c350c7e463b92942e847c756318d15548641e7"},
 ]
 entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
@@ -2601,8 +2623,8 @@ flatten-dict = [
     {file = "flufl.lock-3.2.tar.gz", hash = "sha256:a8d66accc9ab41f09961cd8f8db39f9c28e97e2769659a3567c63930a869ff5b"},
 ]
 fsspec = [
-    {file = "fsspec-2021.6.0-py3-none-any.whl", hash = "sha256:e926b66c074ff3fc732d7678187a294e4a0bf112ccb51594fa9dff5a9fbdc4a1"},
-    {file = "fsspec-2021.6.0.tar.gz", hash = "sha256:931961514c67acab86519ca16985491e639ebf992dbc3a1aae24d44202b52426"},
+    {file = "fsspec-2021.6.1-py3-none-any.whl", hash = "sha256:0ca23992f425c1ba61bf11d3cb3af8ad5363be8612e26732b520090556f173f2"},
+    {file = "fsspec-2021.6.1.tar.gz", hash = "sha256:2cdaafb51dd71e062afffcabcbc4925acef95f9bdd8d822d2010e4bf92951bd7"},
 ]
 ftfy = [
     {file = "ftfy-6.0.3.tar.gz", hash = "sha256:ba71121a9c8d7790d3e833c6c1021143f3e5c4118293ec3afb5d43ed9ca8e72b"},
@@ -3434,8 +3456,8 @@ rich = [
     {file = "ruamel.yaml.clib-0.2.2.tar.gz", hash = "sha256:2d24bd98af676f4990c4d715bcdc2a60b19c56a3fb3a763164d2d8ca0e806ba7"},
 ]
 s3fs = [
-    {file = "s3fs-2021.6.0-py3-none-any.whl", hash = "sha256:592c5e9fcfa76cc7da955ae8031373e72be23f40c5b46a1a411710ea2236a28f"},
-    {file = "s3fs-2021.6.0.tar.gz", hash = "sha256:53790061e220713918602c1f110e6a84d6e3e22aaba27b8e134cc56a3ab6284c"},
+    {file = "s3fs-2021.6.1-py3-none-any.whl", hash = "sha256:0ae22c7af8e687a9fbe05be2b79610381c29e6fb27b7584f6ab820bc11157615"},
+    {file = "s3fs-2021.6.1.tar.gz", hash = "sha256:4cf46d52c7f7b0fc240d3a1e2cd0d58b72d9f6de09fe7ef212a43aa20b89932c"},
 ]
 s3transfer = [
     {file = "s3transfer-0.3.7-py2.py3-none-any.whl", hash = "sha256:efa5bd92a897b6a8d5c1383828dca3d52d0790e0756d49740563a3fb6ed03246"},
@@ -3567,6 +3589,10 @@ tornado = [
     {file = "tornado-6.1-cp39-cp39-win32.whl", hash = "sha256:d3d20ea5782ba63ed13bc2b8c291a053c8d807a8fa927d941bd718468f7b950c"},
     {file = "tornado-6.1-cp39-cp39-win_amd64.whl", hash = "sha256:548430be2740e327b3fe0201abe471f314741efcb0067ec4f2d7dcfb4825f3e4"},
     {file = "tornado-6.1.tar.gz", hash = "sha256:33c6e81d7bd55b468d2e793517c909b139960b6c790a60b7991b9b6b76fb9791"},
+]
+tox = [
+    {file = "tox-3.23.1-py2.py3-none-any.whl", hash = "sha256:b0b5818049a1c1997599d42012a637a33f24c62ab8187223fdd318fa8522637b"},
+    {file = "tox-3.23.1.tar.gz", hash = "sha256:307a81ddb82bd463971a273f33e9533a24ed22185f27db8ce3386bff27d324e3"},
 ]
 tqdm = [
     {file = "tqdm-4.61.1-py2.py3-none-any.whl", hash = "sha256:aa0c29f03f298951ac6318f7c8ce584e48fa22ec26396e6411e43d038243bdb2"},
