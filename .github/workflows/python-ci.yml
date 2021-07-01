@@ -37,6 +37,10 @@ jobs:
         shell: bash
         run: python -m poetry install --no-root
 
+      - name: Run checks
+        run: |
+          python -m poetry run tox -e check
+
       - name: Run tests
         run: |
-          python -m poetry run pytest
+          python -m poetry run tox -e test
