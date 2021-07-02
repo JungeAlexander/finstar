@@ -44,3 +44,16 @@ jobs:
       - name: Run tests
         run: |
           python -m poetry run tox -e test
+
+      - name: Build package
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+        run: |
+          python -m poetry build
+
+      - name: Publish package to PyPI
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+        env:
+          USER: __token__
+          PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          python -m poetry publish -u "$USER" -p "$PASSWORD"
