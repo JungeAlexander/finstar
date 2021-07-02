@@ -27,7 +27,7 @@ poetry run pytest
 
 ```
 poetry run bump2version minor # major or minor or patch
-git-push --tags
+git push --follow-tags
 ```
 
 ### Publication to PyPI
