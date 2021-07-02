@@ -1,4 +1,4 @@
-name: finstar ci
+name: finstar cicd
 
 on:
   push:
