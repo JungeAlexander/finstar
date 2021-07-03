@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "finstar"
-version = "0.2.1"
+version = "0.2.2"
 description = "Modeling financial time series. WIP!"
 authors = ["Alexander Junge <alexander.junge@gmail.com>"]
 license = "Apache-2.0"
