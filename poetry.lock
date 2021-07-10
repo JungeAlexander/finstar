@@ -480,7 +480,7 @@ watch = ["pyinotify"]
 
 [[package]]
 name = "dvc"
-version = "2.4.3"
+version = "2.5.4"
 description = "Git for data scientists - manage your code and data together"
 category = "dev"
 optional = false
@@ -540,7 +540,7 @@ oss = ["oss2 (==2.6.1)", "pycryptodome (>=3.10)"]
 s3 = ["s3fs (==2021.6.1)", "aiobotocore[boto3] (==1.3.0)"]
 ssh = ["paramiko[invoke] (>=2.7.0)"]
 ssh_gssapi = ["paramiko[gssapi,invoke] (>=2.7.0)"]
-tests = ["wheel (==0.36.2)", "pytest (==6.2.4)", "pytest-cov (==2.12.1)", "pytest-xdist (==2.3.0)", "pytest-mock (==3.6.1)", "pytest-lazy-fixture (==0.6.3)", "pytest-timeout (==1.4.2)", "pytest-docker (==0.10.3)", "flaky (==3.7.0)", "mock (==4.0.3)", "rangehttpserver (==1.2.0)", "mock-ssh-server (==0.9.0)", "beautifulsoup4 (==4.9.3)", "wget (==3.2)", "filelock (==3.0.12)", "wsgidav (==3.1.0)", "crc32c (==2.2.post0)", "xmltodict (==0.12.0)", "google-compute-engine (==2.8.13)", "google-cloud-storage (==1.39.0)", "urllib3 (==1.26.6)", "Pygments (==2.9.0)", "collective.checkdocs (==0.2)", "pydocstyle (==6.1.1)", "jaraco.windows (==5.5.0)", "pylint (==2.8.3)", "pylint-pytest (==1.0.3)", "pylint-plugin-utils (==0.6)", "mypy (==0.910)", "types-requests", "types-paramiko", "types-tabulate", "types-toml"]
+tests = ["wheel (==0.36.2)", "pytest (==6.2.4)", "pytest-cov (==2.12.1)", "pytest-xdist (==2.3.0)", "pytest-mock (==3.6.1)", "pytest-lazy-fixture (==0.6.3)", "pytest-timeout (==1.4.2)", "pytest-docker (==0.10.3)", "flaky (==3.7.0)", "mock (==4.0.3)", "rangehttpserver (==1.2.0)", "mock-ssh-server (==0.9.0)", "beautifulsoup4 (==4.9.3)", "wget (==3.2)", "filelock (==3.0.12)", "wsgidav (==3.1.0)", "crc32c (==2.2.post0)", "xmltodict (==0.12.0)", "google-compute-engine (==2.8.13)", "google-cloud-storage (==1.40.0)", "urllib3 (==1.26.6)", "Pygments (==2.9.0)", "collective.checkdocs (==0.2)", "pydocstyle (==6.1.1)", "jaraco.windows (==5.5.0)", "pylint (==2.8.3)", "pylint-pytest (==1.0.3)", "pylint-plugin-utils (==0.6)", "mypy (==0.910)", "types-requests", "types-paramiko", "types-tabulate", "types-toml"]
 webdav = ["webdav4 (>=0.8.1)"]
 webhdfs = ["hdfs (==2.5.8)"]
 
@@ -2348,7 +2348,7 @@ multidict = ">=4.0"
 
 [[package]]
 name = "yfinance"
-version = "0.1.59"
+version = "0.1.62"
 description = "Yahoo! Finance market data downloader"
 category = "main"
 optional = false
@@ -2649,8 +2649,8 @@ dulwich = [
     {file = "dulwich-0.20.23.tar.gz", hash = "sha256:402e56b5c07f040479d1188e5c2f406e2c006aa3943080155d4c6d05e5fca865"},
 ]
 dvc = [
-    {file = "dvc-2.4.3-py2.py3-none-any.whl", hash = "sha256:f02cf67cf3a5fee7428d65a2cab3abd7b4c5f705b27c4796710cce74a48f4702"},
-    {file = "dvc-2.4.3.tar.gz", hash = "sha256:52e1f9c3fca16aae22b397a3f1c350c7e463b92942e847c756318d15548641e7"},
+    {file = "dvc-2.5.4-py3-none-any.whl", hash = "sha256:92f68185eb1b024991a211354b83af32749b361e2cbd5b754023ff414b90eaac"},
+    {file = "dvc-2.5.4.tar.gz", hash = "sha256:0b3b5ff97161b37ecf64e1189c9c34d79215b3a0f516026ae5b3d5e10dc29f92"},
 ]
 entrypoints = [
     {file = "entrypoints-0.3-py2.py3-none-any.whl", hash = "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19"},
@@ -3772,7 +3772,7 @@ yarl = [
     {file = "yarl-1.6.3.tar.gz", hash = "sha256:8a9066529240171b68893d60dca86a763eae2139dd42f42106b03cf4b426bf10"},
 ]
 yfinance = [
-    {file = "yfinance-0.1.59.tar.gz", hash = "sha256:fe4dc46807eceadc6604bf51ece7297b752dc5402a38a87385094fbfc7565fa0"},
+    {file = "yfinance-0.1.62.tar.gz", hash = "sha256:0356eaeef89ed225d272b16a0bb8393870cc68506f9aff545f9f030436044111"},
 ]
 "zc.lockfile" = [
     {file = "zc.lockfile-2.0-py2.py3-none-any.whl", hash = "sha256:cc33599b549f0c8a248cb72f3bf32d77712de1ff7ee8814312eb6456b42c015f"},
