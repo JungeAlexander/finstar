@@ -19,6 +19,8 @@ pandas = "^1.2.4"
 numpy = "^1.20.3"
 pyarrow = "^4.0.1"
 pandas-market-calendars = "^2.0"
+spacy = "^3.1.2"
+en-core-web-trf = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.1.0/en_core_web_trf-3.1.0-py3-none-any.whl"}
 
 [tool.poetry.dev-dependencies]
 jupyterlab = "^3.0.16"
